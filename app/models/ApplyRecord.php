@@ -19,4 +19,7 @@ class ApplyRecord extends Eloquent {
 	 */
 	protected $hidden = array();
 
+	public function isApplicant($user_id) {
+		return $this->user_id == $user_id;
+	}
 }
